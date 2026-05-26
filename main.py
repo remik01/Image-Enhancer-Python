@@ -1,16 +1,17 @@
-# This is a sample Python script.
+"""Development entry point for the scaffolded package.
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+The real product entry points are owned by later UI, API, CLI, or bootstrap
+phases. This module only verifies that the package scaffold imports.
+"""
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+from image_workbench import __version__
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+def main() -> int:
+    """Return success after proving the scaffolded package is importable."""
+    print(f"image-workbench {__version__}")
+    return 0
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
+if __name__ == "__main__":
+    raise SystemExit(main())

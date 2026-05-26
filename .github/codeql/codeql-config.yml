@@ -1,0 +1,12 @@
+name: "Image Workbench CodeQL Config"
+
+paths:
+  - src
+  - tests
+
+paths-ignore:
+  - target
+  - workflow
+
+queries:
+  - uses: security-and-quality
