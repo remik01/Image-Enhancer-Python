@@ -1,0 +1,4 @@
+interface:
+  display_name: "Implement Phase"
+  short_description: "Implement phases and validate closure coverage."
+  default_prompt: "Use $implement-phase to implement workflow phase 10 and validate final overview implementation coverage."

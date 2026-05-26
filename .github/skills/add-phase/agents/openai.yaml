@@ -1,0 +1,4 @@
+interface:
+  display_name: "Add Phase"
+  short_description: "Append one numbered workflow phase aligned with repository governance."
+  default_prompt: "Use $add-phase to add a follow-up phase for <describe the missing implementation scope>."

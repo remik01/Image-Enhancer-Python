@@ -1,0 +1,4 @@
+interface:
+  display_name: "Static Analysis Remediation"
+  short_description: "Fix Python static-analysis, type-checking, dependency, and formatting failures without weakening rules."
+  default_prompt: "Use $static-analysis-remediation to investigate and fix this Python quality-gate failure."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Refactoring Safety"
+  short_description: "Refactor Python code while preserving behavior, typing, and architecture boundaries."
+  default_prompt: "Use $refactoring-safety to plan and perform this Python refactor safely."

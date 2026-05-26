@@ -1,0 +1,4 @@
+interface:
+  display_name: "Phase Creator"
+  short_description: "Generate governed phases and closure checks."
+  default_prompt: "Use $phase-creator to generate implementation phases from workflow/docs/overview.spec.md, including artifact ownership, overview coverage review, static-analysis gates, operational validation, and project closure with overview implementation coverage."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Socio-Technical Risk Analyzer"
+  short_description: "Analyze systemic coordination risk."
+  default_prompt: "Use $socio-technical-risk-analyzer to assess socio-technical risk in this repository."

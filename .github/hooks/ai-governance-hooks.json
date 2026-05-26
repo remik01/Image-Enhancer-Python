@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "disableAllHooks": false,
+  "hooks": {
+    "sessionStart": [
+      {
+        "type": "command",
+        "powershell": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/ai-hooks/scripts/sessionStart-governance.ps1",
+        "timeoutSec": 10
+      }
+    ],
+    "preToolUse": [
+      {
+        "type": "command",
+        "matcher": "powershell|bash",
+        "powershell": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/ai-hooks/scripts/preToolUse-dangerous-command-guard.ps1",
+        "timeoutSec": 10
+      }
+    ],
+    "postToolUse": [
+      {
+        "type": "command",
+        "matcher": "create|edit",
+        "powershell": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/ai-hooks/scripts/postToolUse-change-trigger.ps1",
+        "timeoutSec": 120
+      }
+    ],
+    "permissionRequest": [
+      {
+        "type": "command",
+        "matcher": "powershell|bash",
+        "powershell": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/ai-hooks/scripts/permissionRequest-verification-gate.ps1",
+        "timeoutSec": 10
+      }
+    ],
+    "postToolUseFailure": [
+      {
+        "type": "command",
+        "powershell": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/ai-hooks/scripts/postToolUseFailure-diagnostics.ps1",
+        "timeoutSec": 10
+      }
+    ]
+  }
+}

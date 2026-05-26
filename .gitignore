@@ -1,0 +1,12 @@
+target/
+**/target/
+/build/
+/tools/tomcat/
+/.idea/
+*.iml
+/.copilot-hooks/
+/node_modules/
+/dist/
+/.npm/
+/.vscode/
+*.log

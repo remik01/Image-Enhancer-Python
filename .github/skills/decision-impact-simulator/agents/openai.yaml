@@ -1,0 +1,4 @@
+interface:
+  display_name: "Decision Impact Simulator"
+  short_description: "Simulate architecture decision impact."
+  default_prompt: "Use $decision-impact-simulator to evaluate this proposed architecture decision and its tradeoffs."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "ADR Writer"
+  short_description: "Classify and draft ADRs or decision-log entries."
+  default_prompt: "Use $adr-writer to evaluate whether this architectural change needs an ADR."
