@@ -54,6 +54,10 @@ class OperationDefinition:
 
 _SUPPORTED_OPERATION_DEFINITIONS: tuple[OperationDefinition, ...] = (
     OperationDefinition(
+        operation_id=EnhancementOperationId("blur"),
+        parameters=(OperationParameterDefinition(name="radius", minimum=0.0, maximum=20.0),),
+    ),
+    OperationDefinition(
         operation_id=EnhancementOperationId("brightness"),
         parameters=(OperationParameterDefinition(name="delta", minimum=-1.0, maximum=1.0),),
     ),
@@ -64,6 +68,10 @@ _SUPPORTED_OPERATION_DEFINITIONS: tuple[OperationDefinition, ...] = (
     OperationDefinition(
         operation_id=EnhancementOperationId("saturation"),
         parameters=(OperationParameterDefinition(name="factor", minimum=0.0, maximum=3.0),),
+    ),
+    OperationDefinition(
+        operation_id=EnhancementOperationId("sepia"),
+        parameters=(OperationParameterDefinition(name="intensity", minimum=0.0, maximum=1.0),),
     ),
     OperationDefinition(
         operation_id=EnhancementOperationId("sharpen"),

@@ -22,3 +22,10 @@
 - Accepted three focused application services (`SessionService`, `PipelineService`, `ExecutionService`) so each orchestrates one workflow concern and avoids a catch-all coordinator.
 - Accepted application port names by capability (`ImageProcessingPort`, `ImageSourceAccessPort`, `MetadataAccessPort`, `ExportWriterPort`, `ProjectStoragePort`, `AIInterpretationPort`, `PluginDiscoveryPort`, `QueueExecutionPort`, `DiagnosticsPort`) to keep dependency intent explicit for later adapter phases.
 - Recorded that the new command/result contracts remain internal to this repository and do not change dependency direction from ADR-0001; no new ADR is required for this phase.
+
+## 2026-05-27 - Phase 05 Pillow Backend And Golden Fixtures
+
+- Accepted Pillow as the canonical Phase 05 local image-processing backend; OpenCV behavior is deferred until a later phase or ADR identifies OpenCV-specific requirements.
+- Accepted a golden-image comparison tolerance of maximum per-channel RGB delta `<= 1` to catch meaningful deterministic output drift while allowing tiny image-library encoding or rounding differences.
+- Accepted fixture maintenance convention: update `tests/fixtures/golden/` only when an intentional operation behavior change or reviewed Pillow dependency update explains the changed pixels.
+- Recorded that adding `blur` and `sepia` to the domain operation catalog is a Phase 05 prerequisite, because adapter execution receives already-validated domain `PipelineStep` instances.

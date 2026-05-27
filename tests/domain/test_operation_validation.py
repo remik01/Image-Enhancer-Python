@@ -20,6 +20,17 @@ def test_validate_operation_parameters_accepts_supported_operation_ranges() -> N
     )
 
 
+def test_validate_operation_parameters_accepts_phase_05_baseline_operations() -> None:
+    validate_operation_parameters(
+        EnhancementOperationId("blur"),
+        OperationParameters({"radius": 2.0}),
+    )
+    validate_operation_parameters(
+        EnhancementOperationId("sepia"),
+        OperationParameters({"intensity": 0.75}),
+    )
+
+
 def test_validate_operation_parameters_rejects_unknown_operation() -> None:
     with pytest.raises(UnsupportedOperationError):
         validate_operation_parameters(
@@ -49,6 +60,24 @@ def test_validate_operation_parameters_rejects_out_of_range_value() -> None:
         validate_operation_parameters(
             EnhancementOperationId("sharpen"),
             OperationParameters({"amount": 9.0}),
+        )
+
+
+@pytest.mark.parametrize(
+    ("operation_id", "parameters"),
+    [
+        ("blur", {"radius": 21.0}),
+        ("sepia", {"intensity": 1.5}),
+    ],
+)
+def test_validate_operation_parameters_rejects_phase_05_boundary_violations(
+    operation_id: str,
+    parameters: dict[str, float],
+) -> None:
+    with pytest.raises(InvalidOperationParametersError, match="must be between"):
+        validate_operation_parameters(
+            EnhancementOperationId(operation_id),
+            OperationParameters(parameters),
         )
 
 

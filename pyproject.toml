@@ -8,7 +8,9 @@ version = "0.1.0"
 description = "Local image enhancement workbench with layered Python architecture."
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "Pillow>=10.4",
+]
 
 [project.optional-dependencies]
 dev = [
