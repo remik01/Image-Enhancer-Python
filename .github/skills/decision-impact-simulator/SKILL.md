@@ -1,6 +1,6 @@
 ---
 name: decision-impact-simulator
-description: Simulate technical, operational, organizational, maintenance, testing, observability, AI-workflow, migration, and rollback consequences of proposed architectural or process decisions. Use during planning, ADR drafting, major refactoring, dependency adoption, runtime model changes, or governance tradeoff analysis.
+description: "[Python] Simulate technical, operational, organizational, maintenance, testing, observability, AI-workflow, migration, and rollback consequences of proposed architectural or process decisions. Use during planning, ADR drafting, major refactoring, dependency adoption, runtime model changes, or governance tradeoff analysis."
 ---
 
 # Decision Impact Simulator

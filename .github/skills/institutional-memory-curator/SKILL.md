@@ -1,6 +1,6 @@
 ---
 name: institutional-memory-curator
-description: Reconstruct durable engineering rationale from ADRs, decision logs, plans, investigations, commits, pull requests, documentation, architecture diagrams, incident reports, and implementation evidence. Use for onboarding, historical reasoning, contradiction detection, obsolete assumptions, and AI continuity across sessions.
+description: "[Python] Reconstruct durable engineering rationale from ADRs, decision logs, plans, investigations, commits, pull requests, documentation, architecture diagrams, incident reports, and implementation evidence. Use for onboarding, historical reasoning, contradiction detection, obsolete assumptions, and AI continuity across sessions."
 ---
 
 # Institutional Memory Curator

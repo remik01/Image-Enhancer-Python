@@ -1,4 +1,4 @@
 interface:
   display_name: "Technical Documentation"
-  short_description: "Generate and review senior codebase onboarding documentation."
+  short_description: "[Python] Generate and review senior codebase onboarding documentation."
   default_prompt: "Use $technical-documentation to generate senior-developer onboarding documentation for this project."

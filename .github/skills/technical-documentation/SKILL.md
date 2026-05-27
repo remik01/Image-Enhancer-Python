@@ -1,6 +1,6 @@
 ---
 name: technical-documentation
-description: Generate senior-developer and AI-agent onboarding documentation for a software project. Use when Codex / Copilot needs to map a codebase, explain package/module/class/function structure, summarize data flow, identify use cases or endpoints, inventory dependencies, flag unusual implementation choices or smells, or create a Markdown technical context document before implementation, review, or exploration work.
+description: "[Python] Generate senior-developer and AI-agent onboarding documentation for a software project. Use when Codex / Copilot needs to map a codebase, explain package/module/class/function structure, summarize data flow, identify use cases or endpoints, inventory dependencies, flag unusual implementation choices or smells, or create a Markdown technical context document before implementation, review, or exploration work."
 ---
 
 # Technical Documentation

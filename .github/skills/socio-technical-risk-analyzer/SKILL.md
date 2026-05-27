@@ -1,6 +1,6 @@
 ---
 name: socio-technical-risk-analyzer
-description: Analyze organizational and human coordination risks expressed through technical systems, including ownership concentration, low bus-factor areas, governance bypass, opaque workflows, documentation gaps, AI misuse patterns, and architectural authority concentration. Use before major changes, reviews, onboarding, or governance health checks.
+description: "[Python] Analyze organizational and human coordination risks expressed through technical systems, including ownership concentration, low bus-factor areas, governance bypass, opaque workflows, documentation gaps, AI misuse patterns, and architectural authority concentration. Use before major changes, reviews, onboarding, or governance health checks."
 ---
 
 # Socio-Technical Risk Analyzer

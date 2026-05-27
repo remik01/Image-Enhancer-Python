@@ -1,6 +1,6 @@
 ---
 name: adapter-creation
-description: Workflow for creating or modifying infrastructure adapters that implement application ports, map external DTOs, preserve boundaries, and include tests.
+description: "[Python] Workflow for creating or modifying infrastructure adapters that implement application ports, map external DTOs, preserve boundaries, and include tests."
 ---
 
 # Adapter Creation Skill

@@ -1,4 +1,4 @@
 interface:
   display_name: "Overview Creator"
-  short_description: "Create and validate workflow/docs/overview.spec.md from text, files, or ChatGPT share links."
+  short_description: "[Python] Create and validate workflow/docs/overview.spec.md from text, files, or ChatGPT share links."
   default_prompt: "$overview-creator Create workflow/docs/overview.spec.md from this project brief or shared ChatGPT link: "

@@ -1,6 +1,6 @@
 ---
 name: implement-phase
-description: Implement an existing workflow phase from workflow/phases and produce phase-scoped or final whole-project implementation coverage review evidence. Use when Codex / Copilot is asked to implement phase N, implement workflow phase NN, continue a phase implementation, verify implementation coverage against a phase file, verify final overview implementation coverage, or prepare review/closeout evidence while preserving repository governance, ADR discipline, artifact ownership, tests, and architectural boundaries.
+description: "[Python] Implement an existing workflow phase from workflow/phases and produce phase-scoped or final whole-project implementation coverage review evidence. Use when Codex / Copilot is asked to implement phase N, implement workflow phase NN, continue a phase implementation, verify implementation coverage against a phase file, verify final overview implementation coverage, or prepare review/closeout evidence while preserving repository governance, ADR discipline, artifact ownership, tests, and architectural boundaries."
 ---
 
 # Implement Phase

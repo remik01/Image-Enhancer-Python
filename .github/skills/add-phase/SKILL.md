@@ -1,6 +1,6 @@
 ---
 name: add-phase
-description: Add one workflow phase file under workflow/phases from an inline plain-text description or a file containing the description. Use when Codex / Copilot needs to append a single numbered phase that is consistent with workflow/docs/overview.spec.md, existing phases, implemented plans, source code, AGENTS.md, and repository workflow governance.
+description: "[Python] Add one workflow phase file under workflow/phases from an inline plain-text description or a file containing the description. Use when Codex / Copilot needs to append a single numbered phase that is consistent with workflow/docs/overview.spec.md, existing phases, implemented plans, source code, AGENTS.md, and repository workflow governance."
 ---
 
 # Add Phase

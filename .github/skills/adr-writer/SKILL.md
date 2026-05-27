@@ -1,6 +1,6 @@
 ---
 name: adr-writer
-description: Repository-local workflow for deciding whether an architectural change needs an ADR or decision-log entry, and for drafting high-quality ADRs aligned with project governance.
+description: "[Python] Repository-local workflow for deciding whether an architectural change needs an ADR or decision-log entry, and for drafting high-quality ADRs aligned with project governance."
 ---
 
 # ADR Writer Skill

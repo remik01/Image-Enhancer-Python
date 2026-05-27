@@ -1,4 +1,4 @@
 interface:
   display_name: "Commit for Phase"
-  short_description: "Dry-runs and creates phase commits using the repository convention."
+  short_description: "[Python] Dry-runs and creates phase commits using the repository convention."
   default_prompt: "$commit-for-phase 7"

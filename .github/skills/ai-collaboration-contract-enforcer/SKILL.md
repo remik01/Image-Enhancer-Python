@@ -1,6 +1,6 @@
 ---
 name: ai-collaboration-contract-enforcer
-description: Validate AI-assisted engineering work against repository governance contracts, including ADR obligations, persisted plans, rationale persistence, prompt-to-artifact traceability, reproducibility, review evidence, context integrity, and architecture consistency. Use before major AI-generated changes, PR review, planning, or governance audits.
+description: "[Python] Validate AI-assisted engineering work against repository governance contracts, including ADR obligations, persisted plans, rationale persistence, prompt-to-artifact traceability, reproducibility, review evidence, context integrity, and architecture consistency. Use before major AI-generated changes, PR review, planning, or governance audits."
 ---
 
 # AI Collaboration Contract Enforcer

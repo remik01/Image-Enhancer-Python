@@ -1,6 +1,6 @@
 ---
 name: architectural-drift-investigator
-description: Detect semantic architecture drift against declared architecture, ADRs, decision logs, module boundaries, dependency rules, naming conventions, package structure, and historical intent. Use before large refactors, during architecture reviews, or when code appears to compile while architecture meaning may have eroded.
+description: "[Python] Detect semantic architecture drift against declared architecture, ADRs, decision logs, module boundaries, dependency rules, naming conventions, package structure, and historical intent. Use before large refactors, during architecture reviews, or when code appears to compile while architecture meaning may have eroded."
 ---
 
 # Architectural Drift Investigator

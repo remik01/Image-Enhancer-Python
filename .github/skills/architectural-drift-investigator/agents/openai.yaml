@@ -1,4 +1,4 @@
 interface:
   display_name: "Architectural Drift Investigator"
-  short_description: "Detect semantic architecture drift."
+  short_description: "[Python] Detect semantic architecture drift."
   default_prompt: "Use $architectural-drift-investigator to produce an architecture drift report for this repository."

@@ -1,6 +1,6 @@
 ---
 name: overview-creator
-description: Create workflow/docs/overview.spec.md from a short plain-text project description, a file containing the description, or a shared ChatGPT link containing the project brief, including functional/nonfunctional requirement tables when requirements are explicit or implied. Use when Codex / Copilot needs to analyze a project idea, brief, prompt, prior ChatGPT discussion, or early specification into a broad project overview that respects AGENTS.md, repository instructions, architecture boundaries, ADR expectations, and planning conventions before phase creation or implementation planning.
+description: "[Python] Create workflow/docs/overview.spec.md from a short plain-text project description, a file containing the description, or a shared ChatGPT link containing the project brief, including functional/nonfunctional requirement tables when requirements are explicit or implied. Use when Codex / Copilot needs to analyze a project idea, brief, prompt, prior ChatGPT discussion, or early specification into a broad project overview that respects AGENTS.md, repository instructions, architecture boundaries, ADR expectations, and planning conventions before phase creation or implementation planning."
 ---
 
 # Overview Creator

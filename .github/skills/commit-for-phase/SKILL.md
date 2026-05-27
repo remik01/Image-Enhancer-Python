@@ -1,6 +1,6 @@
 ---
 name: commit-for-phase
-description: Commit repository changes for a workflow phase. Use when the user invokes `$commit-for-phase <phase-number>` or asks Codex / Copilot to stage all changes and commit them using the repository Phase Commit Message Convention from `.github/instructions/phases.instructions.md`.
+description: "[Python] Commit repository changes for a workflow phase. Use when the user invokes `$commit-for-phase <phase-number>` or asks Codex / Copilot to stage all changes and commit them using the repository Phase Commit Message Convention from `.github/instructions/phases.instructions.md`."
 ---
 
 # Commit For Phase

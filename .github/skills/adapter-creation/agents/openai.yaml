@@ -1,4 +1,4 @@
 interface:
   display_name: "Adapter Creation"
-  short_description: "Build adapter boundaries without leaking external contracts inward."
+  short_description: "[Python] Build adapter boundaries without leaking external contracts inward."
   default_prompt: "Use $adapter-creation to design and implement an adapter for this application port."

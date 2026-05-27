@@ -1,6 +1,6 @@
 ---
 name: phase-creator
-description: Create ordered implementation phase files from workflow/docs/overview.spec.md and review phase coverage against the overview, including final closure requirements for whole-project implementation coverage. Use when Codex / Copilot needs to convert a project overview into reviewable workflow phases under workflow/phases, validate per-phase and whole-plan consistency, preserve AGENTS.md governance, architecture boundaries, ADR follow-up, verification expectations, post-implementation operational validation, and final project closure/handover.
+description: "[Python] Create ordered implementation phase files from workflow/docs/overview.spec.md and review phase coverage against the overview, including final closure requirements for whole-project implementation coverage. Use when Codex / Copilot needs to convert a project overview into reviewable workflow phases under workflow/phases, validate per-phase and whole-plan consistency, preserve AGENTS.md governance, architecture boundaries, ADR follow-up, verification expectations, post-implementation operational validation, and final project closure/handover."
 ---
 
 # Phase Creator

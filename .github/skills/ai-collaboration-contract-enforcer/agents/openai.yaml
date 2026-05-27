@@ -1,4 +1,4 @@
 interface:
   display_name: "AI Collaboration Contract Enforcer"
-  short_description: "Enforce AI collaboration governance."
+  short_description: "[Python] Enforce AI collaboration governance."
   default_prompt: "Use $ai-collaboration-contract-enforcer to check this AI-assisted change for governance gaps."

@@ -1,6 +1,6 @@
 ---
 name: python-verification
-description: Workflow for running, interpreting, and reporting Python validation commands including pytest, ruff, formatting checks, type checking, packaging/import checks, and CI-like checks in Python projects.
+description: "[Python] Workflow for running, interpreting, and reporting Python validation commands including pytest, ruff, formatting checks, type checking, packaging/import checks, and CI-like checks in Python projects."
 ---
 
 # Python Verification Skill

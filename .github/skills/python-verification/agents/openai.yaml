@@ -1,4 +1,4 @@
 interface:
   display_name: "Python Verification"
-  short_description: "Run and interpret pytest, ruff, type-checking, packaging, and CI-like checks."
+  short_description: "[Python] Run and interpret pytest, ruff, type-checking, packaging, and CI-like checks."
   default_prompt: "Use $python-verification to run the focused verification for the current Python changes."

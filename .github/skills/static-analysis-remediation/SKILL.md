@@ -1,6 +1,6 @@
 ---
 name: static-analysis-remediation
-description: Workflow for analyzing and fixing ruff, type-checker, Bandit, pip-audit, CodeQL, dependency, formatting, and Python quality-gate issues while preserving architecture and behavior.
+description: "[Python] Workflow for analyzing and fixing ruff, type-checker, Bandit, pip-audit, CodeQL, dependency, formatting, and Python quality-gate issues while preserving architecture and behavior."
 ---
 
 # Static Analysis Remediation Skill

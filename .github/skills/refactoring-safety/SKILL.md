@@ -1,6 +1,6 @@
 ---
 name: refactoring-safety
-description: Workflow for safe Python refactoring that preserves behavior, public contracts, architecture boundaries, tests, typing, and static-analysis quality.
+description: "[Python] Workflow for safe Python refactoring that preserves behavior, public contracts, architecture boundaries, tests, typing, and static-analysis quality."
 ---
 
 # Refactoring Safety Skill

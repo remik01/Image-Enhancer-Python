@@ -1,4 +1,4 @@
 interface:
   display_name: "Institutional Memory Curator"
-  short_description: "Reconstruct durable project rationale."
+  short_description: "[Python] Reconstruct durable project rationale."
   default_prompt: "Use $institutional-memory-curator to explain why this project evolved this way."
