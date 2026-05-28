@@ -29,3 +29,10 @@
 - Accepted a golden-image comparison tolerance of maximum per-channel RGB delta `<= 1` to catch meaningful deterministic output drift while allowing tiny image-library encoding or rounding differences.
 - Accepted fixture maintenance convention: update `tests/fixtures/golden/` only when an intentional operation behavior change or reviewed Pillow dependency update explains the changed pixels.
 - Recorded that adding `blur` and `sepia` to the domain operation catalog is a Phase 05 prerequisite, because adapter execution receives already-validated domain `PipelineStep` instances.
+
+## 2026-05-28 - Phase 06 Batch Metadata Export Workflows
+
+- Accepted deterministic batch import ordering by casefolded source filename with resolved path as the tie-breaker, so repeated imports of the same folder produce stable application order.
+- Accepted export conflict policies `fail`, `overwrite`, and `rename`; intra-batch duplicate output names are rejected unless `rename` is selected, and filesystem conflicts under `rename` receive deterministic numeric suffixes.
+- Accepted explicit export metadata policy through `ExportPreset.strip_metadata`, defaulting to metadata stripping so image metadata is not silently carried into generated exports.
+- Recorded that Phase 06 does not establish a public export compatibility contract or project persistence format; those remain candidates for later ADR review if external compatibility or persistence semantics become durable.
