@@ -15,7 +15,7 @@ The per-skill `README.md` files are a repository-local convention. They are inte
 | Skill | Purpose |
 | --- | --- |
 | `adapter-creation` | Create or modify infrastructure adapters while protecting application/domain boundaries. |
-| `add-phase` | Append exactly one numbered workflow phase. |
+| `add-phase` | Append exactly one numbered workflow phase and keep the canonical overview aligned. |
 | `adr-writer` | Classify and draft ADRs or decision-log entries. |
 | `ai-collaboration-contract-enforcer` | Validate AI-assisted work against governance, traceability, and reproducibility contracts. |
 | `architectural-drift-investigator` | Detect semantic architecture drift against ADRs, decisions, boundaries, and implementation evidence. |
