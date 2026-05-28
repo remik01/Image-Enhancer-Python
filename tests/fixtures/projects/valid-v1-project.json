@@ -1,0 +1,39 @@
+{
+  "images": [
+    {
+      "dimensions": {
+        "height": 480,
+        "width": 640
+      },
+      "image_id": "image-1",
+      "source_uri": "file:///images/image-1.png"
+    }
+  ],
+  "pipelines": [
+    {
+      "image_id": "image-1",
+      "steps": [
+        {
+          "operation_id": "brightness",
+          "parameters": {
+            "delta": 0.25
+          },
+          "step_id": "step-1"
+        },
+        {
+          "operation_id": "contrast",
+          "parameters": {
+            "factor": 1.4
+          },
+          "step_id": "step-2"
+        }
+      ]
+    }
+  ],
+  "project": {
+    "active_image_id": "image-1",
+    "session_id": "session-1"
+  },
+  "schema_version": 1,
+  "settings": {}
+}

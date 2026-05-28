@@ -60,6 +60,18 @@ class _FailOnSecondSaveStoragePort:
         return None
 
 
+class _RecordingStoragePort:
+    def __init__(self) -> None:
+        self.snapshots: list[SessionSnapshot] = []
+
+    def save_session_snapshot(self, snapshot: SessionSnapshot) -> None:
+        self.snapshots.append(snapshot)
+
+    def load_session_snapshot(self, session_id: str) -> SessionSnapshot | None:
+        del session_id
+        return None
+
+
 def _step() -> PipelineStep:
     return PipelineStep(
         step_id=PipelineStepId("s1"),
@@ -110,6 +122,38 @@ def test_snapshot_flags_follow_history_state_transitions() -> None:
     assert initial.can_redo is False
     assert updated.can_undo is True
     assert updated.can_redo is False
+
+
+def test_snapshot_includes_loaded_image_source_uri() -> None:
+    service = SessionService(
+        metadata_port=_FakeMetadataPort(),
+        image_source_port=_CountingImageSourcePort(),
+    )
+    service.create_session(CreateSessionCommand(session_id="session-6", image_id=ImageId("img-6")))
+
+    before_load = service.get_session_snapshot("session-6")
+    service.load_image_reference(LoadImageReferenceCommand(session_id="session-6"))
+    after_load = service.get_session_snapshot("session-6")
+
+    assert before_load.source_uri is None
+    assert after_load.source_uri == "memory://img-6"
+
+
+def test_loading_image_reference_persists_source_uri_snapshot() -> None:
+    storage_port = _RecordingStoragePort()
+    service = SessionService(
+        metadata_port=_FakeMetadataPort(),
+        image_source_port=_CountingImageSourcePort(),
+        project_storage_port=storage_port,
+    )
+    service.create_session(CreateSessionCommand(session_id="session-7", image_id=ImageId("img-7")))
+
+    service.load_image_reference(LoadImageReferenceCommand(session_id="session-7"))
+
+    assert [snapshot.source_uri for snapshot in storage_port.snapshots] == [
+        None,
+        "memory://img-7",
+    ]
 
 
 def test_create_session_rolls_back_when_storage_save_fails() -> None:

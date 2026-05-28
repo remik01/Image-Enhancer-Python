@@ -112,6 +112,9 @@ class SessionService:
             pipeline=history.present,
             can_undo=history.can_undo,
             can_redo=history.can_redo,
+            source_uri=(
+                state.image_reference.source_uri if state.image_reference is not None else None
+            ),
         )
 
     def update_history(self, session_id: str, history: PipelineHistory) -> SessionSnapshot:
@@ -158,6 +161,11 @@ class SessionService:
                 f"Image source lookup failed for image '{state.image_id.value}'."
             ) from exc
         state.image_reference = image_reference
+        try:
+            self._persist_snapshot(self.get_session_snapshot(session_id))
+        except ExternalDependencyError:
+            state.image_reference = None
+            raise
         self._record_event("session.image-reference.loaded", session_id=session_id)
         return image_reference
 

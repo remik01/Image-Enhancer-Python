@@ -36,3 +36,8 @@
 - Accepted export conflict policies `fail`, `overwrite`, and `rename`; intra-batch duplicate output names are rejected unless `rename` is selected, and filesystem conflicts under `rename` receive deterministic numeric suffixes.
 - Accepted explicit export metadata policy through `ExportPreset.strip_metadata`, defaulting to metadata stripping so image metadata is not silently carried into generated exports.
 - Recorded that Phase 06 does not establish a public export compatibility contract or project persistence format; those remain candidates for later ADR review if external compatibility or persistence semantics become durable.
+
+## 2026-05-28 - Phase 07 Project Persistence Contract
+
+- Accepted project-file fixture convention: files under `tests/fixtures/projects/` are contract evidence and should change only for intentional schema or compatibility changes reviewed with ADR-0005.
+- Accepted contract-test maintenance convention: every new project-file schema version, migration rule, required field, or secret-exclusion rule must have fixture or focused adapter test coverage before being considered supported.

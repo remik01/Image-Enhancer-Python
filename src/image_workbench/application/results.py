@@ -40,6 +40,7 @@ class SessionSnapshot:
     pipeline: EnhancementPipeline
     can_undo: bool
     can_redo: bool
+    source_uri: str | None = None
 
 
 @dataclass(frozen=True)
